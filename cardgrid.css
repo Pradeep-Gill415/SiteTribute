@@ -1,0 +1,87 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} */
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.wrapper{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 2rem    ;
+overflow: hidden
+;
+border-radius: 13px;
+}
+.box{
+    padding: 40px;
+}
+.box p{
+    color: hsla(0,0%,100%,0.80);
+    line-height: 1.5;
+}
+
+.box1,.suvs{
+    background: hsl(31,77%,52%);
+    color: white;
+    text-transform: uppercase;
+    
+}
+.box h2{
+    font-size: 30px;
+    font-family: big;
+}
+
+.box2, .sendens{
+    background: hsl(184,100%,22%);
+    color: white;
+    text-transform: uppercase;
+
+}
+.box3, .luxury{
+    background: hsl(179,100%,13%);
+    color: white;
+    text-transform: uppercase;
+}
+.box a{
+    text-decoration: none;
+    background-color: hsl(0,0%,95%);
+    padding: 13px 20px;
+    border-radius: 25px;
+    margin-top: 30px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    border-radius: 2px solid hsl(0,0%,95%);
+}.box1 a{
+    color:hsl(31,77%,52%) ;
+}
+.box2 a{
+    color:  hsl(184,100%,22%) ;
+}
+.box3 a{
+    color:  hsl(179,100%,13%);
+}
+.box a:hover{
+  background: transparent;
+    color: hsl(0,0%,95%);
+}
+@media only screen and (max-width:760px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width:425px){
+    .wrapper{
+       margin: 2rem .5rem;
+    }
+}
